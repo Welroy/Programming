@@ -31,8 +31,8 @@ public class Process {
 
         // == using an arraylist since there could be more then one element having max repeats == //
         ArrayList<Integer> element = new ArrayList<>();
-        int maxCount = 0;
-       // int listPointer = 0;
+        int maxCount = 1;
+        element.add(array[0]);
 
         // == Loop through the list == //
         for (int i = 1 ; i < array.length ; i++){
@@ -69,7 +69,7 @@ public class Process {
         for( int i = 0 ; i < element.size(); i++){
             System.out.print(element.get(i) + ", ");
         }
-        System.out.println(" were repeated "+maxCount);
+        System.out.println(" were repeated "+maxCount + " time/s");
 
     }
 }
